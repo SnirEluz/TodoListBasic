@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(3, 0, 24);
+    .box {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+        width: 500px;
+        height: 550px;
+        background-color: rgb(240, 240, 240);
+        border-radius: 4px;
+        .editDiv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: fixed;
+            height: 110px;
+            background-color: rgb(255, 255, 255);
+            width: 450px;
+            margin-top: 100px;
+            border-radius: 4px;
+            box-shadow: 0px 0px 13px 0px rgb(200, 200, 200);
+
+            h1 {
+                margin-bottom: 13px;
+                color: black;
+                font-size: 19px;
+                font-family: Verdana;
+                font-weight: 100;
+            }
+            input {
+                height: 45px;
+                width: 410px;
+                padding-left: 10px;
+                padding-right: 40px;
+                border: 0;
+                border: 1px solid blue;
+                box-shadow: 0px 0px 13px 0px rgb(243, 243, 243);
+                outline: none;
+                border-radius: 5px;
+            }
+            button {
+                position: absolute;
+                right: 30px;
+                top: 63px;
+                border: 0px;
+                height: 20px;
+                border-radius: 3px;
+                background-color: rgb(233, 233, 233);
+                cursor: pointer;
+                color: rgb(77, 77, 77);
+            }
+        }
+        .boxofheader {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 500px;
+            min-height: 120px;
+            box-shadow: 0 4px 10px -2px rgb(207, 207, 207);
+
+            .h1 {
+                margin-top: 15px;
+                margin-bottom: 5px;
+                font-size: 25px;
+                font-family: Verdana;
+                font-weight: 100;
+            }
+            .inp {
+                min-height: 45px;
+                width: 450px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding-left: 10px;
+                border: 0;
+                border-bottom: 1px solid blue;
+                outline: none;
+                border-radius: 5px;
+            }
+            input:focus::placeholder {
+                color: transparent;
+            }
+        }
+        .boxoful {
+            overflow: auto;
+            height: 100%;
+            width: 500px;
+            .ul {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                flex-direction: column;
+                li {
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    min-height: 45px;
+                    height: auto;
+                    width: 450px;
+                    margin-right: 35px;
+                    margin-top: 15px;
+                    padding-left: 15px;
+                    background-color: rgb(255, 255, 255);
+                    box-shadow: 0px 0px 13px 0px rgb(219, 219, 219);
+                    border-radius: 5px;
+                    overflow:hidden ;
+                    .remove {
+                        position: absolute;
+                        right: 10px;
+                        border: 0px;
+                        height: 20px;
+                        border-radius: 3px;
+                        background-color: rgb(233, 233, 233);
+                        cursor: pointer;
+                        color: rgb(77, 77, 77);
+                    }
+                    .edit {
+                        position: absolute;
+                        right: 40px;
+                        border: 0px;
+                        height: 20px;
+                        border-radius: 3px;
+                        background-color: rgb(233, 233, 233);
+                        cursor: pointer;
+                        color: rgb(77, 77, 77);
+                    }
+                    .name {
+                        position: absolute;
+                        left: 30px;
+                        width: 300px;
+                        font-family: Verdana;
+                        font-weight: 100;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
